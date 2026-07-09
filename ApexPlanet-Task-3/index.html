@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website | Task 3</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+Priyaka
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#joke">API</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>
+
+Responsive Website
+
+</h1>
+
+<p>
+
+This website is created using HTML, CSS and JavaScript.
+
+</p>
+
+<button onclick="showAlert()">
+
+Explore
+
+</button>
+
+</div>
+
+<div class="hero-image">
+
+<img
+id="slider"
+src="https://picsum.photos/id/1015/500/350"
+alt="slider">
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+<h2>
+
+About Me
+
+</h2>
+
+<p>
+
+Hi,
+
+My name is Priyaka.
+
+I am learning Front-End Web Development through ApexPlanet Internship.
+
+I love creating responsive websites using HTML CSS and JavaScript.
+
+</p>
+
+</section>
+
+<!-- Services -->
+
+<section class="services" id="services">
+
+<h2>
+
+My Services
+
+</h2>
+
+<div class="service-box">
+
+<div class="card">
+
+<h3>
+
+HTML
+
+</h3>
+
+<p>
+
+Website Structure
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+CSS
+
+</h3>
+
+<p>
+
+Responsive Design
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+JavaScript
+
+</h3>
+
+<p>
+
+Interactive Website
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Image Gallery -->
+
+<section class="gallery" id="gallery">
+
+<h2>
+
+Image Gallery
+
+</h2>
+
+<img
+
+id="galleryImage"
+
+src="https://picsum.photos/id/1025/700/400"
+
+alt="Gallery">
+
+<br><br>
+
+<button onclick="previousImage()">
+
+Previous
+
+</button>
+
+<button onclick="nextImage()">
+
+Next
+
+</button>
+
+</section>
+
+<!-- API Section -->
+
+<section class="api" id="joke">
+
+<h2>
+
+Random Joke Generator
+
+</h2>
+
+<p id="jokeText">
+
+Click the button below.
+
+</p>
+
+<button onclick="getJoke()">
+
+Get Joke
+
+</button>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© 2026 Priyaka | ApexPlanet Internship
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

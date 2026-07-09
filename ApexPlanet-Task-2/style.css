@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Navbar */
+
+header{
+    background:#0d6efd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#6610f2);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* Common */
+
+section{
+    width:90%;
+    max-width:1000px;
+    margin:60px auto;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#0d6efd;
+}
+
+/* Contact Form */
+
+.contact form{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    outline:none;
+    border-color:#0d6efd;
+}
+
+.contact button{
+    width:100%;
+    padding:14px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact button:hover{
+    background:#084298;
+}
+
+#formMessage{
+    margin-top:15px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* Todo */
+
+.todo-box{
+    display:flex;
+    gap:10px;
+}
+
+.todo-box input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.todo-box button{
+    padding:12px 22px;
+    border:none;
+    background:#198754;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.todo-box button:hover{
+    background:#146c43;
+}
+
+#searchTask{
+    width:100%;
+    margin:20px 0;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+#taskCount{
+    color:red;
+    font-weight:bold;
+}
+
+#taskList{
+    list-style:none;
+    margin-top:20px;
+}
+
+#taskList li{
+    background:#fff;
+    padding:15px;
+    margin-bottom:12px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.actions button{
+    margin-left:8px;
+    padding:8px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.editBtn{
+    background:#ffc107;
+    color:#000;
+}
+
+.deleteBtn{
+    background:#dc3545;
+}
+
+/* Footer */
+
+footer{
+    margin-top:60px;
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.todo-box{
+    flex-direction:column;
+}
+
+.todo-box button{
+    width:100%;
+}
+
+#taskList li{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.actions{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+}
